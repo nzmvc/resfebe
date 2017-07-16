@@ -11,7 +11,6 @@
 		3ED721CB1C03E24E591DBA53 /* Pods_resfebeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F553B1DDCDB84B2FAB5DC82C /* Pods_resfebeUITests.framework */; };
 		D37329510B9F6913EA51E225 /* Pods_resfebeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6AFF396ED9E1AD4A5AA5B34 /* Pods_resfebeTests.framework */; };
 		FA4354891EDB866600575675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4354881EDB866600575675 /* AppDelegate.swift */; };
-		FA43548B1EDB866600575675 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43548A1EDB866600575675 /* ViewController.swift */; };
 		FA43548E1EDB866600575675 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA43548C1EDB866600575675 /* Main.storyboard */; };
 		FA4354901EDB866600575675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA43548F1EDB866600575675 /* Assets.xcassets */; };
 		FA4354931EDB866600575675 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4354911EDB866600575675 /* LaunchScreen.storyboard */; };
@@ -27,6 +26,10 @@
 		FA6CBFEF1F0D00EA000816B0 /* 2c.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6CBFEB1F0D00EA000816B0 /* 2c.png */; };
 		FA6CBFF01F0D00EA000816B0 /* 2d.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6CBFEC1F0D00EA000816B0 /* 2d.png */; };
 		FA6CBFF41F0D0356000816B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA6CBFF31F0D0356000816B0 /* GoogleService-Info.plist */; };
+		FABD09551F17A55C002C2323 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD09541F17A55C002C2323 /* SigninViewController.swift */; };
+		FABD09571F17AC15002C2323 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD09561F17AC15002C2323 /* MainViewController.swift */; };
+		FABD09591F1A318E002C2323 /* Logomakr_0mOD4p.png in Resources */ = {isa = PBXBuildFile; fileRef = FABD09581F1A318E002C2323 /* Logomakr_0mOD4p.png */; };
+		FABD095B1F1A3212002C2323 /* Logomakr_63bdcj.png in Resources */ = {isa = PBXBuildFile; fileRef = FABD095A1F1A3212002C2323 /* Logomakr_63bdcj.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +60,6 @@
 		F553B1DDCDB84B2FAB5DC82C /* Pods_resfebeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_resfebeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4354851EDB866600575675 /* resfebe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = resfebe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4354881EDB866600575675 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA43548A1EDB866600575675 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA43548D1EDB866600575675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA43548F1EDB866600575675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA4354921EDB866600575675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,6 +80,10 @@
 		FA6CBFEB1F0D00EA000816B0 /* 2c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2c.png; sourceTree = "<group>"; };
 		FA6CBFEC1F0D00EA000816B0 /* 2d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2d.png; sourceTree = "<group>"; };
 		FA6CBFF31F0D0356000816B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FABD09541F17A55C002C2323 /* SigninViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		FABD09561F17AC15002C2323 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FABD09581F1A318E002C2323 /* Logomakr_0mOD4p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logomakr_0mOD4p.png; sourceTree = "<group>"; };
+		FABD095A1F1A3212002C2323 /* Logomakr_63bdcj.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logomakr_63bdcj.png; sourceTree = "<group>"; };
 		FF7886074E284DECE98B3EF9 /* Pods_resfebe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_resfebe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -135,6 +141,7 @@
 		FA43547C1EDB866600575675 = {
 			isa = PBXGroup;
 			children = (
+				FABD09561F17AC15002C2323 /* MainViewController.swift */,
 				FA4354871EDB866600575675 /* resfebe */,
 				FA43549C1EDB866700575675 /* resfebeTests */,
 				FA4354A71EDB866700575675 /* resfebeUITests */,
@@ -159,7 +166,6 @@
 			children = (
 				FA6CBFE41F0D008B000816B0 /* img */,
 				FA4354881EDB866600575675 /* AppDelegate.swift */,
-				FA43548A1EDB866600575675 /* ViewController.swift */,
 				FA43548C1EDB866600575675 /* Main.storyboard */,
 				FA6CBFF31F0D0356000816B0 /* GoogleService-Info.plist */,
 				FA43548F1EDB866600575675 /* Assets.xcassets */,
@@ -168,6 +174,7 @@
 				FA4354B61EDC6E6000575675 /* GameViewController.swift */,
 				FA6CBFE21F0CF6CF000816B0 /* SoruGirViewController.swift */,
 				FA6CBFE01F0CF3F0000816B0 /* RegisterViewController.swift */,
+				FABD09541F17A55C002C2323 /* SigninViewController.swift */,
 			);
 			path = resfebe;
 			sourceTree = "<group>";
@@ -196,6 +203,8 @@
 				FA6CBFE91F0D00EA000816B0 /* 2a.png */,
 				FA6CBFEA1F0D00EA000816B0 /* 2b.png */,
 				FA6CBFEB1F0D00EA000816B0 /* 2c.png */,
+				FABD09581F1A318E002C2323 /* Logomakr_0mOD4p.png */,
+				FABD095A1F1A3212002C2323 /* Logomakr_63bdcj.png */,
 				FA6CBFEC1F0D00EA000816B0 /* 2d.png */,
 				FA6CBFE71F0D00A4000816B0 /* rate.png */,
 				FA6CBFE51F0D0099000816B0 /* money309_yesil.png */,
@@ -320,6 +329,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FABD09591F1A318E002C2323 /* Logomakr_0mOD4p.png in Resources */,
+				FABD095B1F1A3212002C2323 /* Logomakr_63bdcj.png in Resources */,
 				FA4354931EDB866600575675 /* LaunchScreen.storyboard in Resources */,
 				FA6CBFE81F0D00A4000816B0 /* rate.png in Resources */,
 				FA6CBFF01F0D00EA000816B0 /* 2d.png in Resources */,
@@ -492,8 +503,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA43548B1EDB866600575675 /* ViewController.swift in Sources */,
+				FABD09571F17AC15002C2323 /* MainViewController.swift in Sources */,
 				FA4354B71EDC6E6100575675 /* GameViewController.swift in Sources */,
+				FABD09551F17A55C002C2323 /* SigninViewController.swift in Sources */,
 				FA4354891EDB866600575675 /* AppDelegate.swift in Sources */,
 				FA6CBFE31F0CF6CF000816B0 /* SoruGirViewController.swift in Sources */,
 				FA6CBFE11F0CF3F0000816B0 /* RegisterViewController.swift in Sources */,
@@ -656,6 +668,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nazimavci.resfebe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -671,6 +684,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nazimavci.resfebe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

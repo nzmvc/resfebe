@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class GameViewController: UIViewController {
 
@@ -17,11 +18,39 @@ class GameViewController: UIViewController {
     @IBOutlet weak var cevap: UILabel!
     @IBOutlet weak var button: UIButton!
     
+    @IBOutlet weak var img: UIImageView!
     override func viewDidLoad() {
         
         //button.titleLabel?.text = "X"
         
         // TODO: resim cekilerek ekrana basılacak
+        let ref = Database.database().reference()
+        
+        let storageRef = Storage.storage().reference()
+        let tempImageRef = storageRef.child("tmpImg.png")
+        
+        
+        let metaData = StorageMetadata()
+        metaData.contentType = "image/png"
+        
+        // image i okumak için
+        
+         tempImageRef.getData(maxSize: 1*2000*1000) { (data, error) in
+         
+            if error == nil {
+         
+                self.img.image = UIImage(data: data!)
+         
+            } else {
+                print(error?.localizedDescription)
+            }
+         
+         
+         }
+ 
+        
+        
+        
         // TODO: cevap alınacak
         // TODO: cevap ve kalan sayıda random harf, cevap butonlarına dağıtılacak
         

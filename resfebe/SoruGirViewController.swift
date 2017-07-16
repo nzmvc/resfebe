@@ -7,13 +7,16 @@
 //
 
 import UIKit
+import Firebase
 
 
 
 class SoruGirViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet weak var img: UIImageView!
-
     @IBOutlet weak var cevapText: UITextField!
+    var picture = UIImage()
+    
+    
     @IBAction func resimSecButton(_ sender: Any) {
         
         let image = UIImagePickerController()
@@ -26,7 +29,10 @@ class SoruGirViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]){
     
-        if let picture = info[UIImagePickerControllerOriginalImage] as? UIImage {
+        
+        picture = (info[UIImagePickerControllerOriginalImage] as? UIImage)!
+        
+        if picture != nil {
             
             img.image = picture
         
@@ -37,6 +43,63 @@ class SoruGirViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     
     @IBAction func kayitButton(_ sender: Any) {
+        
+        let ref = Database.database().reference()
+
+        let userID = Auth.auth().currentUser?.uid           // soruyu gonderen kişinin ıd si kayıt altına alınır
+        let refer = ref.child("questions").childByAutoId()  // soru için random id üretilir. resim bu isimle kaydedilecek
+        let qID = refer.key                                 // qID alınır
+        refer.setValue(["cevap": self.cevapText.text])
+        
+        print("----")
+        print(qID)
+        print("----")
+        
+
+        ref.child("questions").child(qID).observeSingleEvent(of: .value, with: { (snapshot) in
+            if  (snapshot.exists()){
+                ref.child("questions").child(qID).child("uid").setValue(userID)
+                
+                // TODO: date konusunu netleştir. sorunun girilme zamanımı yayınlanma zamanımı
+                ref.child("questions").child(qID).child("date").setValue("11.11.11")
+                
+            } else {
+                print ("snapshot yok")
+            }
+            
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+
+        //
+        
+        let storageRef = Storage.storage().reference()
+        let tempImageRef = storageRef.child("imgDir/\(qID).png")
+        
+        
+        let metaData = StorageMetadata()
+        metaData.contentType = "image/png"
+
+        picture = UIImage(named: "2d.png")!
+        
+        tempImageRef.putData(UIImageJPEGRepresentation(picture, 0.8)!, metadata: metaData) { (data, error) in
+            
+            if error == nil {
+                
+              print(" resim gonderildi")
+                
+            } else {
+                print("resim hata!!")
+            }
+            
+            
+        }
+        
+
+        
+        print (cevapText.text)
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
